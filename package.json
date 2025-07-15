@@ -1,0 +1,46 @@
+{
+	"name": "mcp-sdk-tutorial",
+	"version": "0.0.0",
+	"description": "Matt Pocock https://www.youtube.com/watch?v=MC2BwMGFRx4",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tef20/mcp-sdk-tutorial.git"
+	},
+	"license": "MIT",
+	"author": {
+		"email": "christelford@hotmail.co.uk"
+	},
+	"type": "module",
+	"main": "lib/index.js",
+	"files": [
+		"LICENSE.md",
+		"README.md",
+		"lib/",
+		"package.json"
+	],
+	"scripts": {
+		"build": "tsdown",
+		"format": "prettier .",
+		"lint": "eslint . --max-warnings 0",
+		"prepare": "husky",
+		"tsc": "tsc"
+	},
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write"
+	},
+	"devDependencies": {
+		"@eslint/js": "9.29.0",
+		"@types/node": "24.0.4",
+		"eslint": "9.29.0",
+		"husky": "9.1.7",
+		"lint-staged": "16.1.2",
+		"prettier": "3.6.1",
+		"tsdown": "0.12.7",
+		"typescript": "5.8.3",
+		"typescript-eslint": "8.35.0"
+	},
+	"packageManager": "pnpm@10.4.0",
+	"engines": {
+		"node": ">=20.19.0"
+	}
+}
